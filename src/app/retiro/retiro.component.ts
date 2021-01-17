@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, Input } from '@angular/core';
-import { parse } from 'path';
+// import { parse } from 'path';
 
 @Component({
   selector: 'app-retiro',
