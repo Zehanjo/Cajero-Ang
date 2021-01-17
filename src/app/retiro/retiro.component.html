@@ -1,0 +1,55 @@
+<div class="loginGrid" *ngIf="show">
+    <div class="ml-5 mt-5"><button class="btn btn-primary form-control mt-5 ml-3" (click)="loadRetire(0)">Cuenta Corriente</button></div>
+    <div class="ml-5"><button class="btn btn-primary form-control mt-4 ml-3" (click)="loadRetire(1)">Regresar</button></div>
+</div>
+<div class="loginGrid2 text-center" *ngIf="show2">
+    <div class="pt-3">
+        <h2>{{optionName}}</h2>
+        <h3>Ingrese el monto en Soles</h3>
+    </div>
+    <div class="pt-3 mt-3">
+        <span class=""><h2>S/. {{montoRetire}}</h2></span>
+        <br>
+    </div>
+    <div class="pt-3 cssbutton"> 
+        <span class="">Monto maximo permitido S/. 2,500.00</span>
+        <br>
+        <button class="btn btn-success" style="width:80%" (click)="updateSaldo()">Confirmar</button>
+    </div>
+    <div class="">
+        <button class="btn btn-danger" style="width:80%" (click)="loadRetire(1)">Cancelar</button>
+    </div>
+</div>
+<div class="accountDestiny text-center" *ngIf="show3">
+    <div class="pt-3">
+        <h2>TRANSFERENCIA</h2>
+        <span>Ingrese el Número de la Cuenta Destino</span>
+        <br>
+        <span>de 8 digitos</span>
+    </div>
+    <div class=" mt-3">
+        <span class=""><h2>Nro. {{montoRetire}}</h2></span>
+        <br>
+    </div>
+    <div class="cssbutton"> 
+        <span>Monto maximo permitido S/. 2,500.00</span>
+        <br>
+        <button class="btn btn-success" style="width:80%" (click)="updateSaldo2()">Confirmar</button>
+    </div>
+    <div class="">
+        <button class="btn btn-danger mt-1" style="width:80%" (click)="loadRetire(1)">Cancelar</button>
+    </div>
+</div>
+<div class="loginGrid2 text-center" *ngIf="show4">
+    <div class="pt-5">
+        <h2>Estado de Cuenta</h2>
+        <hr>
+    </div>
+    <div class="pt-4 mt-3">
+        <span class=""><h2>S/. {{saldoActual}}</h2></span>
+        <br>
+    </div>
+    <div class="pt-5">
+        <button class="btn btn-danger" style="width:80%" (click)="loadRetire(1)">Ir al menu</button>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.screenMain{
+    height: 20rem;
+}
+
+.gridView2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.mainGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.mainGrid div{
+    width:70%;
+    button:hover{
+        border: 2px solid #03d9ff;
+        border-radius:6px;
+        width:102%;
+    }
+}
+
+
+

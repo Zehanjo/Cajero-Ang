@@ -1,0 +1,20 @@
+.loginGrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.loginGrid div{
+    width:70%;
+    button:hover{
+        border: 2px solid #03d9ff;
+        border-radius:6px;
+        width:102%;
+    }
+}
+.loginGrid2{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.cssbutton{
+
+}

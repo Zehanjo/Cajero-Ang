@@ -1,0 +1,9 @@
+<div class="container" >
+    <div class="gridNumber text-center" >
+        <div *ngFor="let number of dataNumber" style="border-radius: 5px;">
+            <h1 (click)="loadNumber(number.id)">{{number.id}}</h1>
+        </div>
+        <div (click)="loadNumber(10)"><h1>Reset</h1></div>
+        <div (click)="loadNumber(11)"><h1>Enter</h1></div>
+    </div>
+</div>
